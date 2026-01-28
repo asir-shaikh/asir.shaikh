@@ -1,99 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asir Shaikh </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            margin: 20px 0;
-            padding: 10px 0;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
-</head>
-<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <h1 class="site-title">Asir Shaikh</h1>
+    <p class="site-subtitle">Personal Tutor</p>
+  </div>
+</header>
 
-    <header>
-        <h1>Asir Shaikh</h1>
-        <p>Personal Tutor</p>
-    </header>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-link" href="#about">About Me</a>
+    <a class="nav-link" href="#services">Services</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </div>
+</nav>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<main class="container">
+  <section id="about" class="section">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hello! I am Asir Shaikh, a tutor with expertise in the UCAT and SACE...</p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am Asir Shaikh, a  tutor with expertise in the UCAT and SACE. I am passionate about helping students achieve their academic goals through personalized tutoring sessions.</p>
-        <p>My experiences involve</p>
-        <ul>
-            <li> Medicine student at the JMP</li>
-            <li> 3310 in the UCAT (98th%tile)</li>
-            <li> 98.80 ATAR </li>
-        </ul>
-    </section>
+      <ul>
+        <li>Medicine student at the JMP</li>
+        <li>3310 in the UCAT (98th%tile)</li>
+        <li>98.80 ATAR</li>
+      </ul>
 
-    <section id="services">
-        <h2>Services</h2>
-        <p>I offer tutoring services in the following areas:</p>
-        <ul>
-            <li>UCAT</li>
-            <li>Biology</li>
-            <li>Mathematical Methods</li>
-            <li>Physics</li>
-        </ul>
-        <p>Whether you're struggling with a particular subject or just need some extra help, I am here to assist you in reaching your full potential.</p>
-    </section>
+      <div class="actions">
+        <a class="btn primary" href="#contact">Book a lesson</a>
+        <a class="btn" href="#services">See subjects</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you are interested in my tutoring services, please feel free to reach out to me.</p>
-        <p>Email: <a href="mailto:youremail@example.com">asirs7772@gmail.com</a></p>
-    </section>
+  <section id="services" class="section">
+    <div class="card">
+      <h2>Services</h2>
+      <p>I offer tutoring services in the following areas:</p>
+      <ul>
+        <li>UCAT</li>
+        <li>Biology</li>
+        <li>Mathematical Methods</li>
+        <li>Physics</li>
+      </ul>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Asir Shaikh All Rights Reserved.</p>
-    </footer>
+  <section id="contact" class="section">
+    <div class="card">
+      <h2>Contact Me</h2>
+      <p>If you’re interested, feel free to reach out.</p>
+      <p>Email: <a href="mailto:asirs7772@gmail.com">asirs7772@gmail.com</a></p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:asirs7772@gmail.com">Email me</a>
+      </div>
+    </div>
+  </section>
 
-</body>
-</html>
+  <footer>© <span id="year"></span> Asir Shaikh</footer>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
